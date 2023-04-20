@@ -2,8 +2,8 @@ import React from 'react'
 import { createBrowserRouter } from "react-router-dom";
 import { HeroesApp } from "../HeroesApp";
 import { ErrorPage } from '../ui';
-import { LoginPage } from '../auth/pages/LoginPage';
-import { HeroesRoutes, routesHeroes } from '../heroes/router';
+import { LoginPage } from '../auth';
+import { HeroesRoutes, routesHeroes } from '../heroes';
 
 export const router = createBrowserRouter([
     {
