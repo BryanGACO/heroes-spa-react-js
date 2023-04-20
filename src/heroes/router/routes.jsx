@@ -3,6 +3,10 @@ import { MarvelPage, DcPage, SearchPage, HeroPage } from "../pages";
 
 export const routesHeroes = [
     {
+        path: "/",
+        element: <Navigate to="/marvel" />
+    },
+    {
         path: "/*",
         element: <Navigate to="/marvel" />
     },
