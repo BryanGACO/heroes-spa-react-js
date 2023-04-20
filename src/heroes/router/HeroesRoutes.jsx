@@ -1,9 +1,14 @@
 import { Outlet } from "react-router-dom"
+import { Navbar } from "../../ui"
 
 export const HeroesRoutes = () => {
   return (
-    <>      
-      <Outlet />
+    <>
+      <Navbar />
+
+      <div className="container">
+        <Outlet />
+      </div>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-import { MarvelPage, DcPage } from "../pages";
+import { MarvelPage, DcPage, SearchPage, HeroPage } from "../pages";
 
 export const routesHeroes = [
     {
@@ -13,5 +13,13 @@ export const routesHeroes = [
     {
         path: "dc",
         element: <DcPage/>,
+    },
+    {
+        path: "search",
+        element: <SearchPage/>,
+    },
+    {
+        path: "hero",
+        element: <HeroPage/>,
     }
 ];
