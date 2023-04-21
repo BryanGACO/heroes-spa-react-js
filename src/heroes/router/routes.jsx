@@ -19,7 +19,7 @@ export const routesHeroes = [
         element: <SearchPage/>,
     },
     {
-        path: "hero",
+        path: "hero/:id",
         element: <HeroPage/>,
     }
 ];
