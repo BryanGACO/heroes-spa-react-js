@@ -5,11 +5,7 @@ export const routesHeroes = [
     {
         path: "/",
         element: <Navigate to="/marvel" />
-    },
-    {
-        path: "/*",
-        element: <Navigate to="/marvel" />
-    },
+    },    
     {
         path: "marvel",
         element: <MarvelPage />,
