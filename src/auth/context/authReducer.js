@@ -12,7 +12,7 @@ export const authReducer = (state = initialState, action) => {
             return {
                 ...state,   // Es una buena practica desestructurar el state anterior para siempre mantener todas las propiedades, y actualizamos solo lo que nos interesa
                 logged: true,
-                name: action.payload
+                user: action.payload
             };
 
         case types.logout:

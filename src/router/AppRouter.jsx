@@ -1,10 +1,8 @@
-import { Outlet } from "react-router-dom"
-import { AuthProvider } from "../auth"
+import { RouterProvider } from "react-router-dom"
+import { router } from "./routes"
 
 export const AppRouter = () => {
   return (
-    <AuthProvider>      
-      <Outlet />
-    </AuthProvider>
+    <RouterProvider router={router} />    
   )
 }

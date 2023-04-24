@@ -1,18 +1,18 @@
 import React from 'react'
-import { Navigate, createBrowserRouter } from "react-router-dom";
-import { AppRouter } from "./AppRouter";
+import { createBrowserRouter } from "react-router-dom";
 import { ErrorPage } from '../ui';
 import { LoginPage } from '../auth';
 import { HeroesRoutes, routesHeroes } from '../heroes';
+import { HeroesApp } from '../HeroesApp';
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <AppRouter />,
+        element: <HeroesApp />,
         errorElement: <ErrorPage />,
         children: [
             { path: "login", element: <LoginPage /> },                                  
-            { path: "/*", element: <Navigate to="/" /> },                      
+            { path: "/*", element: <HeroesRoutes /> },                      
             {
                 path: "/",
                 element: <HeroesRoutes />,
