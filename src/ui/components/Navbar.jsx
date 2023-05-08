@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   const onLogout = () => {
     
-    //logout();
+    logout();
 
     navigate('/login', {
       replace: true //evita que se pueda regresar al historial anterior
