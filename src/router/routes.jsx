@@ -1,9 +1,9 @@
 import React from 'react'
-import { createBrowserRouter } from "react-router-dom";
-import { ErrorPage } from '../ui';
 import { LoginPage } from '../auth';
 import { HeroesRoutes, routesHeroes } from '../heroes';
 import { HeroesApp } from '../HeroesApp';
+import { ErrorPage } from '../ui';
+import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
     {
