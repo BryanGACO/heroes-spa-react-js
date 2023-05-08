@@ -4,14 +4,14 @@ import { AuthContext } from "../context";
 
 export const LoginPage = () => {
 
-  const {login} = useContext(AuthContext);
+  const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  const onLogin = ()=> {
+  const onLogin = () => {
 
     login('Bryan Garcia');
 
-    navigate('/marvel',{
+    navigate('/marvel', {
       replace: true // No queremos que la persona pueda regresar al login si ya lo paso
     })
   }
@@ -22,7 +22,7 @@ export const LoginPage = () => {
       <hr />
       <button
         className="btn btn-primary"
-        onClick={ onLogin }
+        onClick={onLogin}
       >
         Login
       </button>

@@ -7,11 +7,12 @@ export const Navbar = () => {
 
   const navigate = useNavigate();
 
+  //const user = { name : 'Es un test'};
   const { user, logout } = useContext(AuthContext);
 
   const onLogout = () => {
     
-    logout();
+    //logout();
 
     navigate('/login', {
       replace: true //evita que se pueda regresar al historial anterior

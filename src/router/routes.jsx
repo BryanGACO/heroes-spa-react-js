@@ -6,18 +6,17 @@ import { ErrorPage } from '../ui';
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <HeroesApp />,
+      {
+        path: "login",
+        element: (
+            <LoginPage />
+        ),
         errorElement: <ErrorPage />,
-        children: [
-            { path: "login", element: <LoginPage /> },                                  
-            { path: "/*", element: <HeroesRoutes /> },                      
-            {
-                path: "/",
-                element: <HeroesRoutes />,
-                children: routesHeroes
-            },
-        ],        
     },    
+    {
+        path: "/", 
+        element: <HeroesRoutes />,
+        errorElement: <ErrorPage />,
+        children: routesHeroes
+    }
 ]);
