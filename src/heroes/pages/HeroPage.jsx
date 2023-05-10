@@ -5,21 +5,23 @@ import { useMemo } from "react";
 export const HeroPage = () => {
   const { id } = useParams(); // se usa para encontrar los parametros especificadas en los routes
   const navigate = useNavigate();
-  
-  const hero = useMemo(()=> getHeroById(id), [id]) 
 
-  const onNavigateBack = () => {     
-     navigate(-1);
+  const hero = useMemo(() => getHeroById(id), [id])
+
+  const onNavigateBack = () => {
+    navigate(-1);
   }
 
   if (!hero) {
     return <Navigate to="/marvel" />
   }
 
+  const heroImgUrl = `https://bryang4c0.github.io/heroes-spa-react-js/heroes/${id}.jpg`;
+
   return (
     <div className="row mt-5">
       <div className="col-4">
-        <img src={`/heroes/${id}.jpg`} alt={hero.superhero} className="img-thumbnail animate__animated animate__fadeInLeft" />
+        <img src={heroImgUrl} alt={hero.superhero} className="img-thumbnail animate__animated animate__fadeInLeft" />
       </div>
       <div className="col-8">
         <h3>{hero.superhero}</h3>
