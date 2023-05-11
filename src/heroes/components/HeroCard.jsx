@@ -15,7 +15,7 @@ export const HeroCard = ({
     characters
 }) => {
 
-    const heroImgUrl = `https://bryang4c0.github.io/heroes-spa-react-js/heroes/${id}.jpg`;
+    const heroImgUrl = `/heroes/${id}.jpg`;
 
     return (
         <Link to={`/hero/${id}`} className="my-card">

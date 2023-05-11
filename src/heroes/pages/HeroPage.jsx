@@ -16,7 +16,7 @@ export const HeroPage = () => {
     return <Navigate to="/marvel" />
   }
 
-  const heroImgUrl = `https://bryang4c0.github.io/heroes-spa-react-js/heroes/${id}.jpg`;
+  const heroImgUrl = `/heroes/${id}.jpg`;
 
   return (
     <div className="row mt-5">
