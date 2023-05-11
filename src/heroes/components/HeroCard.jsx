@@ -15,7 +15,7 @@ export const HeroCard = ({
     characters
 }) => {
 
-    const heroImgUrl = `/heroes/${id}.jpg`;
+    const heroImgUrl = `./heroes/${id}.jpg`;
 
     return (
         <Link to={`/hero/${id}`} className="my-card">
